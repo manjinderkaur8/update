@@ -516,6 +516,34 @@ header .nav-item a:hover {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media (max-width:950px) {
+  .card-body .card-subtitle{
+    padding-top: 1.2rem;
+    font-size: 0.6rem;
+  }
+
+  .card-body .card-title{
+    font-size: 1rem;
+    margin-bottom:0;
+    padding-bottom:0;
+    
+  }
+
+  a.card-action{
+    padding:0.5em;
+    left:1em;
+    top:0.7em;
+  }
+
+  .card-body .card-text{
+    font-size: 0.8rem;
+  }
+
+  .card-body a{
+    font-size: 0.6rem;
+  }
+}
+
 @media (max-width: 768px) {
   .card-deck {
     display: flex;
@@ -1966,6 +1994,54 @@ footer .contact-us p div i {
   section .contact-us-box{
     padding-left: 2em;
   }
+
+  .card-body .card-subtitle{
+    font-size: 0.6rem;
+  }
+
+  a.card-action{
+    padding:0.6em;
+  }
+
+  .card-body .card-title{
+    font-size: 0.8rem;
+    margin-bottom:0;
+    padding-bottom:0;
+    
+  }
+
+  .card-body .card-text{
+    font-size: 0.6rem;
+  }
+
+  .card-body a{
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width:575px){
+  .card-body .card-subtitle{
+    font-size: 0.8rem;
+  }
+
+  a.card-action{
+    padding:1em;
+  }
+
+  .card-body .card-title{
+    font-size: 1.5rem;
+    margin-bottom:0;
+    padding-bottom:0;
+    
+  }
+
+  .card-body .card-text{
+    font-size: 0.8rem;
+  }
+
+  .card-body a{
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width:500px) {
@@ -1975,3 +2051,4 @@ footer .contact-us p div i {
     justify-content: center;
   }
 }
+

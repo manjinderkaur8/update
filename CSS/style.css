@@ -1729,10 +1729,10 @@ section div.wrapper {
 }
 
 .form {
+  display: grid;
   background: #ffffff;
   padding: 5px 5px;
   border-radius: 10px;
-
 }
 
 .form input {
@@ -1742,6 +1742,7 @@ section div.wrapper {
   background-color: white;
   padding: 9px 2.5rem;
   outline: none;
+  width: 100%;
 }
 
 .btn-3 {

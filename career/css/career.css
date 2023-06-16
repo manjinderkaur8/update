@@ -112,6 +112,10 @@ svg{
   font-weight: bold;
 }
 
+.outer{
+  display: none;
+}
+
 .bigheading {
   font-size: 3rem;
   color: rgb(4, 4, 91);
@@ -194,10 +198,17 @@ svg {
   margin-bottom: 5%;
 }
 
-@media (max-width:1000px) {
+@media (max-width:1281px) {
+  .upskill-img{
+    position: absolute;
+    top:-60%;
+  }
+}
+
+@media (max-width:1085px) {
   .upskill .smallheading{
     padding-top: 1em;
-    font-size:2rem;
+    font-size:2.5rem;
   }
 
   .upskill .para{
@@ -206,14 +217,25 @@ svg {
 
   .upskill-img{
     position: absolute;
-    top:-39%;
+    top:-54%;
   }
   
 }
 
-@media (max-width:903px) {
+@media (max-width:969px) {
+  .upskill .smallheading{
+    padding-top: 1em;
+    font-size:2rem;
+  }
+
   .upskill-img{
-    top:-28.5%;
+    top:-35.8%;
+  }
+}
+
+@media (max-width:861px){
+  .upskill-img{
+    top:-28%;
   }
 }
 
@@ -253,6 +275,10 @@ svg {
   color: black;
   border: 1px solid black;
   background: none;
+}
+
+.joining-section{
+  padding-top: 1.5em;
 }
 
 .teams h1 {
@@ -305,7 +331,7 @@ article h1 {
   /* width: 90%; */
   /* height: auto;
     margin: auto; */
-  margin-bottom: 7%;
+  margin:auto 0;
 }
 
 .image-section img {
@@ -369,6 +395,8 @@ article p {
   height: auto;
   display: block;
   margin: auto;
+  border-start-end-radius: 5em;
+  border-end-start-radius: 5em;
 }
 
 .content-section .title {
@@ -445,7 +473,9 @@ article p {
   text-align: left;
 }
 
-
+.baoiam-environment-section{
+  margin-top: 3em;
+}
 
 
 
@@ -965,6 +995,22 @@ article p {
   transition: 3s;
 }
 
+.contact-left h2{
+  font-size:clamp(1.5rem , calc( -0.235rem + 3vw ) , 2.5rem);
+  padding-bottom:0;
+}
+.contact-left h2 span{
+  font-size:clamp(1.5rem , calc( -0.235rem + 3vw ) , 2.5rem);
+}
+
+#carouselExampleControls{
+  display: none;
+}
+
+.form{
+  display: grid;
+}
+
 
 /* Media Query  */
 
@@ -1177,29 +1223,65 @@ margin-bottom: -10px;
 }
 
 
-
-
-
-
-
 /* ------------------------------------responsive media queries start-------------------------------------------- */
-@media (min-width: 1024px){
-  #carouselExampleControls{
+@media (max-width:1044px){
+  .joining-section{
+    padding-top: 0.5em;
+  }
+
+  .about{
+    margin-top:1.5em;
+  }
+
+  .why-baoiam-section{
+    margin-top: 2em;
+  }
+
+  .image-section img{
+    width:20em;
+  }
+
+  .outer{
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    display: block;
+    text-align: center;
+  }
+
+  .inner{
     display: none;
+  }
 }
-.member img{
-  width: 50%;
+
+@media (max-width:1183px){
+  .members{
+    display:grid;
+    place-items:center;
+    width:100%
+  }
+
+  .members img{
+    width:50%;
+  }
 }
+
+@media (max-width: 1024px){
+  .members{
+    display: none;
+  }
+
+  #carouselExampleControls{
+    display: grid;
+  }
+
+  .member{
+    margin:0 auto;
+    width:40em;
+  }
 }
 
 @media (min-width: 30em) and (max-width: 80em) {
  
-  .image-section{
-    margin-bottom: 10%;
-  }
-  .teams{
-    margin-right: 4%;
-  }
   article p{
     font-size: 14px;
   }
@@ -1237,6 +1319,12 @@ margin-bottom: -10px;
   }
 }
 
+@media (max-width:938px) {
+  .image-section img{
+    width:15em;
+  }
+}
+
 @media (min-width: 450px) and (max-width: 768px) {
 
   .upskill {
@@ -1263,6 +1351,13 @@ margin-bottom: -10px;
     font-size: 14px;
     margin-left: 5%;
     margin-top: 0;
+  }
+
+  .smallheading.outer{
+    font-size: 2.3rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    margin-bottom: 0 !important;
   }
 
 }
@@ -1315,9 +1410,9 @@ margin-bottom: -10px;
     /* font-size: 2rem;
     text-align: left;
     margin-bottom: 15px; */
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 0.5em;
   }
 
   .top-content {
@@ -1356,10 +1451,6 @@ margin-bottom: -10px;
     text-align: left;
   }
 
-  .wrapper {
-    margin-top: 30px;
-  }
-
   .hideOnMobile {
     display: none;
   }
@@ -1391,7 +1482,24 @@ margin-bottom: -10px;
     text-align: justify;
   }
   .title p{
-    font-size: 15px;
+    font-size: 1rem;
+  }
+
+  .joining-section{
+    row-gap: 0;
+  }
+
+  .team-details{
+    display: grid;
+    align-content: center;
+  }
+
+  .team-details h3{
+    font-size: 1.2rem;
+  }
+
+  .team-details p{
+    font-size: 0.8rem;
   }
 }
 
@@ -1414,7 +1522,7 @@ margin-bottom: -10px;
   }
 
   .upskill .smallheading{
-    font-size: 2.5rem;
+    font-size: 1.9rem !important;
   }
 
   .upskill .para{
@@ -1540,6 +1648,11 @@ margin-bottom: -10px;
     font-size: 1.7rem !important;
   }
 
+  .outer{
+    padding-left: 1.5rem !important;
+    text-align: start;
+  }
+
   .upksill .para {
     font-size: 0.8rem !important;
   }
@@ -1595,6 +1708,37 @@ margin-bottom: -10px;
 /* large screen mobile view media queires end */
 
 /* small screen mobile view media queries start */
+
+@media (max-width:1242px) {
+  .navbar-light .navbar-nav .nav-link{
+    font-size: 1rem !important;
+  }
+
+  .navbar-expand-lg .navbar-nav{
+    padding-right:0;
+    align-items: center;
+  }
+}
+
+@media (max-width:1242px) {
+  .navbar-light .navbar-nav .nav-link{
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width:480px){
+  .section{
+    margin-bottom: 0;
+  }
+
+  .baoiam-environment-section {
+    margin-top: 2em;
+  }
+
+  .why-baoiam-section{
+    margin-top: 1em;
+  }
+}
 
 @media (max-width: 320px) {
   .member img {

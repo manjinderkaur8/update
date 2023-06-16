@@ -369,7 +369,6 @@ article p {
 
 .section {
   width: 100%;
-  min-height: 100vh;
 }
 
 .container {
@@ -881,6 +880,7 @@ article p {
   position: relative;
   /* background-color: blue; */
   padding: 10px 40px 40px 40px;
+  text-align: center;
 }
 
 .icon {
@@ -1728,7 +1728,7 @@ margin-bottom: -10px;
 
 @media (max-width:480px){
   .section{
-    margin-bottom: 0;
+    margin-bottom: 7em !important;
   }
 
   .baoiam-environment-section {
@@ -1737,6 +1737,12 @@ margin-bottom: -10px;
 
   .why-baoiam-section{
     margin-top: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .section{
+    margin-bottom: 2em;
   }
 }
 

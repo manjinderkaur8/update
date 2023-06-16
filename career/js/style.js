@@ -1,3 +1,4 @@
+// Changing Svg position according to window width
 const svg = document.querySelector("svg")
 
 window.addEventListener("resize",function (event){

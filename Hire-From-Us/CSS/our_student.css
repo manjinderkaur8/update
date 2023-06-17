@@ -199,12 +199,7 @@
       width: 98%;
       margin: auto;
     }
-  
-    .heading {
-      font-size: 2rem;
-      display: inline;
-    }
-  
+
     .details {
       margin: 0;
     }
@@ -254,3 +249,12 @@
     
 }
   
+@media (max-width: 400px) {
+  .strong_mindset-image{
+    width:100% !important;
+  }
+
+  .heading{
+    bottom:2.8em !important;
+  }
+}

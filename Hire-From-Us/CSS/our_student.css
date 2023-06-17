@@ -103,18 +103,50 @@
     text-align: center;
     margin: 0 45%;
     margin-top: 5%;
+}
+
+#carouselExampleControls{
+    display: none;
+}
+
+.contact-left h2{
+    font-size:clamp(1.5rem , calc( -0.235rem + 3vw ) , 2.5rem);
+    padding-bottom:0;
+}
+
+.contact-left h2 span{
+    font-size:clamp(1.5rem , calc( -0.235rem + 3vw ) , 2.5rem);
+}
+
+.form{
+    display: grid;
+}
+
+@media (max-width:1183px){
+    .members{
+      display:grid;
+      place-items:center;
+      width:100%
+    }
+  
+    .members img{
+      width:50%;
+    }
   }
 
-
-@media (min-width: 1024px) {
-    #carouselExampleControls {
+@media (max-width: 1024px){
+    .members{
         display: none;
     }
 
-    .member img {
-        width: 50%;
+    #carouselExampleControls{
+        display: grid;
     }
 
+    .member{
+        margin:0 auto;
+        width:40em;
+    }
 }
 
 
@@ -123,104 +155,102 @@
         display:none;
         }
 }
+
 @media screen and (max-width: 768px) {
     .members {
-        display: none;
+      display: none;
     }
-
+  
     .member {
-        width: 100%;
+      width: 100%;
     }
-
-   
 }
 
 @media (min-width: 450px) and (max-width: 768px) {
+  
     .smallheading {
-        font-size: 2.4rem;
+      font-size: 2.4rem;
+    }
+  
+    .member img{
+      width: 200px;
+      height: 200px;
     }
 
-    .member img {
-        width: 200px;
-        height: 200px;
+    .doublequote{
+      font-size: 2rem;
+      display:  inline;
     }
 
-    .doublequote {
-        font-size: 2rem;
-        display: inline;
+    .member-details p{
+      font-size: 14px;
+      margin-left: 5%;
+      margin-top: 0;
     }
-
-    .member-details p {
-        font-size: 14px;
-        margin-left: 5%;
-        margin-top: 0;
-    }
+  
 }
 
-@media (max-width:450px) {
-     .smallheading {
-        font-size: 1.7rem;
-    }
-    .member {
-        width: 98%;
-        margin: auto;
-    }
+@media (max-width: 450px) {
 
-    .team-container h1 {
-        margin-top: 15%;
-        font-size: 25px;
-        text-align: center;
-        font-weight: bold;
-        color: rgb(4, 4, 91);
+    /* .main-comment{
+        width: 80%;
+      } */
+    .member {
+      width: 98%;
+      margin: auto;
+    }
+  
+    .heading {
+      font-size: 2rem;
+      display: inline;
+    }
+  
+    .details {
+      margin: 0;
     }
     
-    .team-container p {
-        font-size: 14px;
-        text-align: justify;
-        margin: 8.5% 4%;
-        color: gray;
+    .smallheading {
+      font-size: 1.7rem !important;
     }
-
+  
+  
+    .btn-background {
+      /* font-size: 1.2rem; */
+      padding: 2%;
+      width:100%;
+    }
+    
     .member {
-        display: block;
-        margin-bottom: 4%;
+      display: block;
+      margin-bottom: 4%;
     }
-
+  
     .member img {
-        width: 150px;
-        margin-left: 25%;
-        /* width: 100%;
-        padding: 8%; */
+      width: 100px;
+      margin-left: 35%;
+      /* width: 100%;
+      padding: 8%; */
     }
-
+  
     .doublequote {
-        font-size: 14px;
-        display: inline;
+      font-size: 14px;
+      display: inline;
     }
-
+  
     .member-details {
-        padding: 4%;
+      padding: 4%;
     }
-
+  
     .member-details h1 {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     .member-details p {
-        display: inline;
-        margin-left: 0;
-        margin-right: 0;
+      display: inline;
+      margin-left: 0;
+      margin-right: 0;
     }
+  
+    
 }
-
-@media (min-width:450px) {
-    /* .smallheading {
-        font-size: 1.7rem;
-    } */
-
-    /* .member {
-        width: 98%;
-        margin: auto;
-    } */
-
-}
+  

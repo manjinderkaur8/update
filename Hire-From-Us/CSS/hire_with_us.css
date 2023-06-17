@@ -123,6 +123,10 @@ header .nav-item a:hover {
   color: rgb(1, 1, 68);
 }
 
+.outer{
+  display: none;
+}
+
 .strong_mindset-content span {
   background: -webkit-linear-gradient(0deg, #fa2424, #fb8721);
   -webkit-background-clip: text;
@@ -207,8 +211,8 @@ header .nav-item a:hover {
   background-color: #f9f9f9;
   padding: 50px;
   margin: 25px;
-  box-shadow: 4px 10px 20px rgb(208, 207, 207);
-  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(44, 42, 42, 0.692);
+  border-radius: 15px;
 }
 
 .hiring-icon {
@@ -280,14 +284,13 @@ header .nav-item a:hover {
   margin-top: -170px;
 }
 
-.hiring-img {
-  height: 100px;
-}
+/* .hiring-img {
+  height:100px;
+} */
 
 .hiring-img img {
   width: 65.5%;
   position: relative;
-  top: -450px;
 }
 
 
@@ -295,9 +298,9 @@ header .nav-item a:hover {
   display: flex;
   justify-content: left;
   align-items: center;
-  position: relative;
+  /* position: relative;
   top: 72%;
-  left: 47%;
+  left: 47%; */
 
   text-align: center;
 
@@ -330,7 +333,7 @@ header .nav-item a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  padding:2em 1em;
 }
 
 .contact-more-info h3 {
@@ -523,9 +526,9 @@ header .nav-item a:hover {
 }
 @media only screen and (min-width: 1580px) {
 
-  .heading {
+  /* .heading {
     top: 140%;
-  }
+  } */
 
   .container-main .contact-heading-faq{
   display: none;
@@ -535,10 +538,10 @@ header .nav-item a:hover {
 
 @media only screen and (max-width: 1527px) {
 
-  .heading {
+  /* .heading {
     top: 100%;
     left: 47%;
-  }
+  } */
 
 }
 
@@ -560,120 +563,158 @@ header .nav-item a:hover {
   /* Strong Mindset start */
 
   .strong_mindset-sec {
-    flex-direction: column;
+    display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
+  }
+
+  .strong_mindset-sec + .strong_mindset-sec{
+    margin-top: 0 !important;
   }
 
   .strong_mindset-content {
     width: 100%;
   }
 
-  .strong_mindset-content h1 {
-    font-size: 38px;
+  .mr-bottom-3{
+    margin-bottom: 4em !important;
+  }
+
+  .strong_mindset-content h1{
+    font-size: clamp(1.6rem,calc(-0.7678rem + 4.5vw),3.5rem);
+  }
+
+  .outer{
+    display: none;
   }
 
   .strong_mindset-content span {
-    font-size: 39px;
+    font-size: clamp(1.6rem,calc(-0.7678rem + 4.5vw),3.5rem);
   }
 
-  .strong_mindset-img img {
-    width: 90%;
-    float: none;
+  .strong_mindset-content p{
+    font-size: clamp(0.8rem,calc(-0.7rem + 2.2vw),1.2rem);
   }
 
   .proof_of_work_main {
-    flex-direction: column-reverse;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 
-  .proof_of_work img {
-    float: left;
+  .proof_of_work{
+    margin:auto 0;
+  }
+
+  /*  Strong Mindset Second Part start */
+
+  .check-con h3{
+    font-size: clamp(1rem , calc( -0.656rem + 2vw ) ,3rem) !important;
+  }
+
+  .float-right img{
+    float:right;
   }
 
   /* hiring start */
 
   .hiring-sec {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    gap:2em;
+    margin-top:0.7em;
   }
 
   .hiring-sec-box {
-    width: 70%;
+    margin:0;
+    height:auto;
+    width: 45%;
+    flex-grow: 1;
+  }
+
+  .hiring-icon{
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  .hiring-icon .fa{
+    font-size: 2rem;
+    align-self:center;
+    margin-bottom: 0;
+  }
+
+  .hiring-sec-box:nth-child(2) .hiring-icon .fa{
+    padding:0.65em 0.85em !important;
   }
 
   .hiring-icon h3 {
-    font-size: 100px;
-    padding-left: 60%;
+    font-size: 4rem;
+    padding:0;
   }
 
-  .hiring_h1 h1 {
-    font-size: 38px;
+  .hiring-sec-box p {
+    font-size: clamp(1rem , calc( -0.6678rem + 1.8vw ) , 2rem);
   }
 
-  .hiring_h1 h1 span {
-    font-size: 38px;
+  .hiring-sec-box h2 {
+    font-size: clamp(1.2rem , calc( -0.5678rem + 2.5vw ) , 2.3rem) ;
   }
 
-  .hiring_h1 p {
-    width: 90%;
+  .strong_mindset-img{
+    display: grid;
+    position: relative;
+    margin:0;
+    padding:0;
+    padding-top: 4em;
+    width:30em;
   }
 
-  .hiring-box-1 {
-    margin-top: 20px;
+  .strong_mindset-img img{
+    width:100%;
+    background-color: #050237;
+    border-radius: 10px;
   }
 
-  .hiring-box-2 {
-    margin-top: 20px;
-  }
-
-  .hiring-box-3 {
-    margin-top: 20px;
-  }
-
-  .hiring-img {
-    height: 800px;
-  }
-
-  .hiring-img img {
-    width: 90%;
-    top: 0px;
-    float: right;
+  .heading .fa{
+    box-shadow: none;
   }
 
   .heading {
-
-    justify-content: center;
-
-    top: -47%;
-    left: 0%;
-    width: 85.3%;
-
+    position: absolute;
+    bottom:4.8em;
+    /* justify-content: center; */
+    z-index:999;
   }
 
+  .heading h1{
+    font-size: 1.6rem !important;
+    color:white;
+    width:100%;
+  }
 
-
+  .contact-more-info h1{
+    font-size: clamp(1.5rem,calc( -7.435rem + 2.8vw ),3.5rem) !important;
+  }
 
   .looking-to {
     flex-direction: column;
   }
 }
 
+@media (max-width:1000px){
+  .hiring-sec-box{
+    width:70%;
+  }
+}
 
 @media only screen and (max-width: 1270px) {
 
-
-  .hiring-img {
+  /* .hiring-img {
     height: 800px;
-  }
-
-  .heading {
-
-    justify-content: center;
-
-    top: -30%;
-    left: 0%;
-    width: 85.3%;
-
-  }
+  } */
 
   /* FAQ */
   .container-main {
@@ -692,35 +733,53 @@ header .nav-item a:hover {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 870px) {
+  /* strong mindset section starts */
   .strong_mindset-sec {
     margin: 15% 7%;
   }
 
-  .hiring-img {
+  .strong_mindset-content h1{
+    text-align: start;
+    font-size: clamp(2rem,calc(-0.6678rem + 6vw),3.5rem);
+  }
+
+  .strong_mindset-content span{
+    font-size: clamp(2rem,calc(-0.6678rem + 6vw),3.5rem);
+  }
+
+  .inner{
+    display: none;
+  }
+
+  .outer{
+    display: block;
+  }
+
+  /* .hiring-img {
     height: 800px;
+  } */
+
+}
+
+@media (max-width:760px) {
+  .proof_of_work_main{
+    flex-direction: column;
   }
 
-  .heading {
+  .flex-col{
+    flex-direction: column-reverse;
+  }
 
+  .proof_of_work{
+    display: grid;
     justify-content: center;
-
-    top: -20%;
-    left: 0%;
-    width: 85.3%;
-
+    align-content: center;
   }
 
-
-  .heading i {
-    font-size: 18px;
-    padding: 2px 3px;
-    margin: 2px 10px;
-  }
-
-  .heading h1 {
-    font-size: 18px;
-    margin: 0px 0;
+  .proof_of_work img{
+    width:60%;
+    margin:0 auto;
   }
 }
 
@@ -729,30 +788,20 @@ header .nav-item a:hover {
     margin: 20% 7%;
   }
 
-  .strong_mindset-content h1 {
-    font-size: 25px;
+  .strong_mindset-img{
+    padding-top: 2em;
+    width: 20em;
   }
-
-  .strong_mindset-content span {
-    font-size: 26px;
-  }
-
-  .strong_mindset-content p {
-    font-size: 15.5px;
-
-  }
-
-  .strong_mindset-img img {
-    width: 90%;
-    float: none;
-  }
-
-  /*
     
-    .strong_mindset-img{
-      display: none;
-    }
-    */
+  .strong_mindset-img .heading{
+    bottom:3rem;
+    font-size: 1rem !important;
+  }
+
+  .strong_mindset-img .heading h1{
+    font-size: 1rem !important;
+  }
+   
 
   .strong_mindset-content .check-on .fa {
     padding: 6px;
@@ -763,11 +812,26 @@ header .nav-item a:hover {
     font-size: 15px;
   }
 
+  .strong_mindset-sec {
+    margin-bottom: 1.5em !important;
+  }
+
+  .pad-top{
+    padding-top: 1.4em;
+  }
 
   /* hiring start */
-  .hiring-sec-box {
-    width: 70%;
-    padding: 20px;
+
+  .hiring-sec-box{
+    padding:2em 1.4em;
+  }
+
+  .hiring-sec-box h2 {
+    font-size: clamp(0.8rem , calc( -0.5678rem + 2.5vw ) , 1.8rem);
+  }
+
+  .hiring-sec-box p {
+    font-size: clamp(0.6rem , calc( -0.5678rem + 2.5vw ) , 1.8rem);
   }
 
   .hiring_h1 h1 {
@@ -778,59 +842,24 @@ header .nav-item a:hover {
     font-size: 38px;
   }
 
-  .hiring-sec-box i {
-    border: 2px solid rgb(221, 224, 226);
-    padding: 10px 12px;
-    padding-top: 11px;
-    font-size: 42px;
-    border-radius: 50%;
-    margin-bottom: 58px;
-    color: orangered;
-    background-color: rgb(237, 239, 241);
+  .hiring-icon{
+    display: none;
   }
-
-  .hiring-sec-box #icon-2 {
-
-    padding: 10px 17px;
-    padding-top: 13px;
-  }
-
-  .hiring-icon h3 {
-    font-size: 100px;
-    padding-left: 15%;
-  }
-
 
   .hiring-sec-box h2 {
-    font-size: 20px;
-    margin: 20px 0;
-  }
+    margin-top:0;
+   }
 
-  .hiring-sec-box p {
-    font-size: 17px;
-    text-align: justify;
-  }
-
-
-  .hiring-img {
+  /* .hiring-img {
     height: 300px;
-  }
-
-  .heading {
-
-    justify-content: center;
-
-    top: -33%;
-    left: -9%;
-    width: 85.3%;
-
-  }
+  } */
 
 
   .heading i {
-    font-size: 8px;
-    padding: 2px 3px;
-    margin: 2px 10px;
+    font-size: 1rem;
+    margin-right: 0.5em;
+    /* padding: 2px 3px;
+    margin: 2px 10px; */
   }
 
   .heading h1 {
@@ -838,44 +867,25 @@ header .nav-item a:hover {
     margin: 0px 0;
   }
 
-
-  /*  contact-more-info  start */
-  .contact-more-info {
-    padding: 0 10px;
-  }
-
-  .contact-more-info h3 {
-    background-color: rgb(60, 77, 122);
-
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-size: 10px;
-  }
-
-
-  .contact-more-info h1 {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 33px;
-  }
-
   .contact-more-info-btn {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
+
+  .contact-more-info .contact_us_btn{
+    margin:0;
+    margin-top: 1em;
+  }
+
+  .contact-more-info .explore_btn{
+    margin:0;
+    margin-top: 1em;
+  }
+
 
   .contact-more-info-btn button {
-    padding: 10px 14px;
-    margin: 10px 15px;
-    font-size: 15px;
-  }
-
-
-  .hiring-sec-box {
-    width: 85%;
-    padding: 25px;
-    margin: 25px;
-
+    padding:0.5em 1em;
   }
 
   .ac-main h1 {
@@ -939,54 +949,17 @@ header .nav-item a:hover {
     margin-bottom: -40px;
   }
 
-
-
-  .hiring-icon h3 {
-    padding-left: 5%;
-  }
-
-  .heading {
-
-    justify-content: center;
-
-    top: -25%;
-    left: -10%;
-    width: 88.3%;
-
-  }
-
-  .hiring-sec-box {
-    width: 85%;
-    padding: 25px;
-    margin: 25px;
-
-  }
-
-  .hiring-icon h3 {
-    font-size: 100px;
-    font-weight: bold;
-    padding-left: 35%;
-
+  .strong_mindset-img{
+    width: 100%;
   }
 
   .hiring_h1 h1 span {
     font-size: 23px;
   }
 
-
-  .hiring-sec-box h2 {
-    font-size: 14.6px;
-  }
-
-  .hiring-sec-box p {
-    font-size: 14px;
-  }
-
   .hiring-img {
     display: none;
   }
-
-
 
   .hiring_h1 p {
     width: 100%;
@@ -1029,19 +1002,7 @@ header .nav-item a:hover {
 
 @media only screen and (max-width: 300px) {
 
-  .hiring-icon h3 {
-    padding-left: 25%;
-  }
 
-  .heading {
-
-    justify-content: center;
-
-    top: -20%;
-    left: -10%;
-    width: 88.3%;
-
-  }
 }
 
 

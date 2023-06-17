@@ -953,6 +953,10 @@ header .nav-item a:hover {
     width: 100%;
   }
 
+  .heading{
+    bottom:3.3rem !important;
+  }
+
   .hiring_h1 h1 span {
     font-size: 23px;
   }

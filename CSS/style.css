@@ -621,7 +621,13 @@ header .nav-item a:hover {
 
 /** align images center class **/
 .align-center{
-  margin:auto 0;
+  margin:auto;
+  align-items: center;
+}
+
+.flex-grow{
+  flex-grow:1 !important;
+  max-width:max-content !important;
 }
 
 .section-3 .user-image{

@@ -86,6 +86,10 @@ header .nav-item a:hover {
   color: #ec4f01 !important;
 }
 
+.fa-xmark{
+  font-size: 2rem;
+}
+
 .btn-1 {
   font-size: 1rem;
   font-weight: 600;

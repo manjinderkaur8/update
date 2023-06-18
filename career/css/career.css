@@ -1037,6 +1037,10 @@ article p {
   }
 }
 
+.fa-xmark{
+  font-size: 2rem;
+}
+
 @media (max-width: 1050px) {}
 
 @media (max-width: 940px) {

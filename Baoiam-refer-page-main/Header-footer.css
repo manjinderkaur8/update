@@ -155,6 +155,10 @@ header .nav-item a:hover {
     }
 }
 
+.fa-xmark{
+  font-size: 2rem;
+}
+
 @media (max-width: 769px) {
   .form input{
     padding:9px 2.6rem;

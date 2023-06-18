@@ -411,6 +411,10 @@ body {
   transition:padding smooth;
 }
 
+.fa-xmark{
+  font-size: 2rem;
+}
+
 @media (max-width:769px){
   .card-container:has(.profile-card:hover){
     padding-top: 0;

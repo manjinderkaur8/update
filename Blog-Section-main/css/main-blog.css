@@ -173,6 +173,10 @@ color: orangered !important;
   background-color: red !important;
 }
 
+
+.fa-xmark{
+  font-size: 2rem;
+}
 /* Resonsive */
 
 @media (max-width: 1300px) {

@@ -340,6 +340,10 @@ footer p{
     color:white;
 }
 
+.fa-xmark{
+    font-size: 2rem;
+  }
+
 
 @media(max-width:1240px){
     .one{

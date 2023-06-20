@@ -1,7 +1,7 @@
 *,html{
     margin: 0;
     padding: 0;
-    color: #040052;
+    /* color: #040052; */
     box-sizing: border-box;
 }
 
@@ -342,6 +342,10 @@ footer p{
 
 .fa-xmark{
     font-size: 2rem;
+  }
+
+  .navbar-toggler{
+    box-shadow: none !important;
   }
 
 

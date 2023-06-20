@@ -392,6 +392,16 @@ footer p{
     .dropdown-menu[aria-labelledby="navbarDropdown-subcourses"]{
         border-radius: 0;
     }
+    .two{
+        padding: 2rem !important;
+    }
+    .why-web-dev-box{
+        padding-left: 2rem;
+    }
+    .why-web-dev{
+        padding-left: 5rem;
+    }
+
   }
 
 @media (max-width:950px) {

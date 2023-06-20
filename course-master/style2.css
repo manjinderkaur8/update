@@ -159,6 +159,10 @@ h1{
     font-size: 2rem;
   }
 
+  .navbar-toggler{
+    box-shadow: none !important;
+  }
+
 /* .course-hightlights-card:nth-child(n)::after{
     content: "";
     position:absolute;

@@ -349,6 +349,10 @@ footer p{
   }
 
 
+  .accordion-item-header::after{
+    right: 1rem !important;
+  }
+
 @media(max-width:1240px){
     .one{
         padding:2em !important;

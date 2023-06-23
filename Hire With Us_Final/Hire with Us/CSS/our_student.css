@@ -105,6 +105,10 @@
     margin-top: 5%;
   }
 
+  .fa-xmark{
+    font-size: 2rem;
+  }
+
 
 @media (min-width: 1024px) {
     #carouselExampleControls {

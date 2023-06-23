@@ -982,6 +982,10 @@ form input{
     display: none;
     
   }
+
+  .fa-xmark{
+    font-size: 2rem;
+  }
 /*
   .col-md-7 h2{
     font-size: 24px;

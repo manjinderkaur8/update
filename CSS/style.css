@@ -621,7 +621,13 @@ header .nav-item a:hover {
 
 /** align images center class **/
 .align-center{
-  margin:auto 0;
+  margin:auto;
+  align-items: center;
+}
+
+.flex-grow{
+  flex-grow:1 !important;
+  max-width:max-content !important;
 }
 
 .section-3 .user-image{
@@ -2081,4 +2087,8 @@ footer .contact-us p div i {
   .we__offer .course_img img{
     border-bottom-width: 1.2rem;
   }
+}
+
+.fa-xmark{
+  font-size: 2rem;
 }

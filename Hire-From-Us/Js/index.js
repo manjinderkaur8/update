@@ -1,4 +1,3 @@
-// adding cross icon onclick in navbar
 const navBartoggler = document.querySelector(".navbar-toggler")
 const navIcon = document.querySelector(".navbar-toggler-icon")
 
@@ -14,4 +13,3 @@ navBartoggler.addEventListener('click',function(){
     navIcon.classList.toggle("fa-solid")
     navIcon.classList.toggle("fa-xmark")
 })
-// code end

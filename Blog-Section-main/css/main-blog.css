@@ -173,6 +173,10 @@ color: orangered !important;
   background-color: red !important;
 }
 
+
+.fa-xmark{
+  font-size: 2rem;
+}
 /* Resonsive */
 
 @media (max-width: 1300px) {
@@ -211,7 +215,8 @@ color: orangered !important;
     padding-bottom: 40px;
   }
   .we__offer_card {
-    width: 350px;
+    /* width: 350px;       */
+    width: 500px;
     /* height: 500px; */
   }
 
@@ -227,16 +232,27 @@ color: orangered !important;
     padding: 0px;
   }
 }
+/* @media(max-width:700px)
+{
+  .we__offer_card{
+    min-height: 500px;
+    width: 450px;
+  } 
+} */
 
 @media (max-width: 600px) {
 
 .we__offer_card{
   min-height: 500px;
+  width: 400px;
 }
 
 }
 
 @media (max-width: 450px) {
+  #courses{
+    margin-top: 50px;
+  }
   .swipe {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -280,9 +296,19 @@ color: orangered !important;
   .we__offer_card .course_img .img-text .text {
     font-size: 0.6rem;
   }
+
+
+  #main_head{
+    font-size: 0.9rem;
+    font-weight: 100;
+  }
+
 }
 
 @media (max-width: 345px) {
+  #courses{
+    margin-top: 50px;
+  }
 
   .we__offer_card{
     height: 530px;
@@ -295,7 +321,8 @@ color: orangered !important;
   }
   .we__offer_content .blog-icon {
     /* background-color: rgb(119, 0, 255); */
-    font-size: 0.3rem;
+    /* 0.3rem */
+    font-size: 0.3rem;  
   }
   .we__offer_content .blog-icon .fa-regular {
     padding-right: 4 px;
@@ -303,6 +330,19 @@ color: orangered !important;
     padding-left: 4px;
   }
   .we__offer_card .course_img .img-text .text {
+    /* 0.6rem */
     font-size: 0.6rem;
   }
+  .subcontent{
+    font-size: 0.5px;
+  }
+  
+  /* edited */
+  
+    #main_head{
+      font-size: 0.9rem;
+      font-weight: 100;
+    }
+
+ 
 }

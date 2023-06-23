@@ -8,7 +8,9 @@
     font-family: 'Montserrat', sans-serif;
     display: flex;
  } */
-
+ .fa-xmark{
+  font-size: 2rem;
+}
  
  .blog-slider {
     width: 95%;

@@ -1,7 +1,7 @@
 *,html{
     margin: 0;
     padding: 0;
-    color: #040052;
+    /* color: #040052; */
     box-sizing: border-box;
 }
 
@@ -340,6 +340,18 @@ footer p{
     color:white;
 }
 
+.fa-xmark{
+    font-size: 2rem;
+  }
+
+  .navbar-toggler{
+    box-shadow: none !important;
+  }
+
+
+  .accordion-item-header::after{
+    right: 1rem !important;
+  }
 
 @media(max-width:1240px){
     .one{
@@ -384,6 +396,16 @@ footer p{
     .dropdown-menu[aria-labelledby="navbarDropdown-subcourses"]{
         border-radius: 0;
     }
+    .two{
+        padding: 2rem 6% !important;
+    }
+    .why-web-dev-box{
+        padding-left: 2rem;
+    }
+    .why-web-dev{
+        padding-left: 5rem;
+    }
+
   }
 
 @media (max-width:950px) {

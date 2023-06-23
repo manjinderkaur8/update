@@ -638,6 +638,10 @@ form input{
   padding-left: 5px;
   }
 
+  .fa-xmark{
+    font-size: 2rem;
+  }
+
 
 
 @media screen and (max-width:1400px) {

@@ -8,6 +8,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.fa-xmark{
+  font-size: 2rem;
+}
+
 body{
   overflow-x: hidden;
 }

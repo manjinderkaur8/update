@@ -655,7 +655,10 @@ form input{
 
   }
   
-
+  
+  .fa-xmark{
+    font-size: 2rem;
+  }
 
 
 @media screen and (max-width:1000px)

@@ -321,6 +321,10 @@ header .nav-item a:hover {
   text-align: center;
 }
 
+.fa-xmark{
+  font-size: 2rem;
+}
+
 /*  contact-more-info  start */
 
 .contact-more-info {

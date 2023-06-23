@@ -290,6 +290,10 @@ section {
     transition: 3s;
 }
 
+.fa-xmark{
+    font-size: 2rem;
+  }
+
 
 /* Media Query  */
 

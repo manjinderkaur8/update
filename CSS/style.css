@@ -8,6 +8,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -131,6 +134,7 @@ header .nav-item a:hover {
   border: none;
   border-radius: 5px;
   transition: 3s;
+  /* border: 5px solid red; */
 }
 
 .btn-1:hover {
@@ -1563,10 +1567,7 @@ p.virtues-sub-heading {
     font-size: 0.6rem;
   }
 
-  .we__offer_content .blog-icon .fa-regular {
-    /* padding-left: 13px; */
-    /* background-color: #fb8721; */
-  }
+  
 
   .we__offer_content .blog-icon .fa-regular {
     padding-right: 8 px;

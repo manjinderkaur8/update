@@ -81,7 +81,7 @@ header .nav-item a {
   font-weight: 600;
 }
 
-@media (max-width:991px) {
+@media (max-width:1048px) {
   #nav-courses-one{
     display: block;
   }

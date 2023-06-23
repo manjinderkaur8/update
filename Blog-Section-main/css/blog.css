@@ -563,6 +563,10 @@ section {
   .post1 .post-content h4 {
     padding: 0px 0px 0px 14px;
   }
+
+  #courses {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -600,6 +604,10 @@ section {
   .blog-left h2 {
     font-size: 1.2rem;
     font-weight: 600;
+  }
+
+  #courses {
+    padding: 0 50px;
   }
 }
 
@@ -690,6 +698,10 @@ section {
     font-size: 1.2rem;
     font-weight: 700;
   }
+
+  #courses {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -713,11 +725,19 @@ section {
   .blog-left .blog-left-icon .icon-tag {
     font-size: 0.9rem;
   }
+
+  #courses {
+    padding: 0 50px;
+  }
   
 }
 
 @media (max-width: 350px) {
   .post1 .post-content h4 {
     font-size: 0.5rem;
+  }
+
+  #courses {
+    padding: 0 50px;
   }
 }

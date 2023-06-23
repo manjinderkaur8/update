@@ -247,6 +247,10 @@ color: orangered !important;
   width: 400px;
 }
 
+#courses {
+  padding: 0 50px !important;
+}
+
 }
 
 @media (max-width: 450px) {
@@ -303,6 +307,10 @@ color: orangered !important;
     font-weight: 100;
   }
 
+  #courses{
+    padding: 0 50px !important;
+  }
+
 }
 
 @media (max-width: 345px) {
@@ -342,6 +350,12 @@ color: orangered !important;
     #main_head{
       font-size: 0.9rem;
       font-weight: 100;
+    }
+
+  
+
+    #courses {
+      padding: 0 50px;
     }
 
  

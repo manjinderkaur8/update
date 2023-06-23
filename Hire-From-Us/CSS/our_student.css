@@ -122,6 +122,10 @@
     display: grid;
 }
 
+.fa-xmark{
+  font-size: 2rem;
+}
+
 @media (max-width:1183px){
     .members{
       display:grid;

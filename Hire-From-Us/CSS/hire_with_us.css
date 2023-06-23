@@ -10,6 +10,10 @@
 
 /* Navbar */
 
+.fa-xmark{
+  font-size: 2rem;
+}
+
 body {
   overflow-x: hidden;
 }
